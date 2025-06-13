@@ -1,0 +1,17 @@
+{"properties": [
+  {
+    "name": "hotel.rec1",
+    "type": "java.lang.String",
+    "description": "A description for 'hotel.rec1'"
+  },
+  {
+    "name": "hotel.rec5",
+    "type": "java.lang.String",
+    "description": "A description for 'hotel.rec5'"
+  },
+  {
+    "name": "hotel.name",
+    "type": "java.lang.String",
+    "description": "A description for 'hotel.name'"
+  }
+]}

@@ -1,0 +1,36 @@
+#spring:
+#  profiles:
+#    active: mysql
+    
+  spring:
+    profiles:
+      active: staging
+---
+  spring:
+    profiles:
+      include: sql
+    
+  
+---
+  spring:
+    config:
+       activate:
+        on-profile: mysql
+    datasource:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql:///con1
+      username: root
+      password: root
+      type: org.apache.commons.dbcp2.BasicDataSource
+
+---
+ spring:
+  config:
+    activate: 
+      on-profile: sql
+  datasource:
+    driver-class-name: oracle.jdbc.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521:orcl
+    username: c##batch4pm
+    password: naresh
+    type: oracle.ucp.jdbc.PoolDataSourceImpl
