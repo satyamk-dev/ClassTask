@@ -22,7 +22,7 @@ public class BootIocProj06MiniProjectApplication {
 		
 	Scanner sc =new Scanner(System.in);
 	
-	System.out.println("Enter Your Name\t:");
+	System.out.println("Enter Your Name\t:::::");
 	
 	String n = sc.next();
 		
